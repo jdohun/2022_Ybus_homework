@@ -1,0 +1,113 @@
+#container {
+    width : 100px;
+    height : 100px;
+    background-color : #888888;
+    position: relative;
+}
+
+.box {
+    width: 10px;
+    height: 10px;
+    border: solid black 1px;
+}
+
+/* shape */
+.square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.by2_3 {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+}
+
+.by3_2 {
+    width: 20px;
+    height: 30px;
+    position: absolute;
+}
+
+.by1_4 {
+    width:40px;
+    height: 10px;
+    position: absolute;
+}
+
+.by4_1 {
+    width:10px;
+    height: 40px;
+    position: absolute;
+}
+
+.col3 {
+    width:30px;
+    height: 10px;
+}
+
+.col2 {
+    width:20px;
+    height: 10px;
+}
+
+.row2 {
+    width:10px;
+    height: 20px;
+}
+
+.row3 {
+    width:10px;
+    height: 30px;
+}
+
+/* float */
+.square > * > .box,
+.square > .box,
+.by3_2 > *,
+.by1_4 > * > *,
+.row2 > .box,
+.row3 > .box,
+.col2 > .box,
+.col3 > .box {
+    float:left;
+}
+
+
+/* color */
+.redB,
+.redB > * ,
+.redB > * > * {
+    background-color: red;
+}
+
+.greenB,
+.greenB > * ,
+.greenB > * > * {
+    background-color: #2C952C;
+}
+
+.blueB,
+.blueB > * ,
+.blueB > * > * {
+    background-color: #0000FF;
+}
+
+.pinkB,
+.pinkB > * ,
+.pinkB > * > * {
+    background-color: #FF28A7;
+}
+
+.yellowB,
+.yellowB > * ,
+.yellowB > * > * {
+    background-color: yellow;
+}
+
+.orangeB,
+.orangeB > * ,
+.orangeB > * > * {
+    background-color: orange;
+}
