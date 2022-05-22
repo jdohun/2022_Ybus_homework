@@ -7,7 +7,7 @@
 }
 
 #book{
-    width:790px; /* 오른쪽에 버튼까지 포함한 사이즈*/
+    width:785px; /* 오른쪽에 버튼까지 포함한 사이즈*/
     height:500px;
     border: 1px solid black;
     position: absolute;
@@ -21,25 +21,83 @@
     height:500px;
     border: 1px solid black;
     border-radius: 5px;
-
 }
 
+#realBook > div{
+    float : left;
+}
+
+/* left */
 #left {
-    width : 215px;
+    position: relative;
+    width : 213px;
     height : 100%;
     border: 1px solid black;
     float: left;
     border-radius: 5px;
 }
 
+#left > div {
+    position: absolute;
+    left: 5px;
+}
+
+#leftHeader {
+    position: relative;
+    width : 205px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+#leftContents {
+    position: relative;
+    left: 3px;
+}
+
+#leftHeaderContents {
+    position: relative;
+    height: 20px;
+    width: 150px;
+    margin: auto;
+    top : 10px;
+    margin: auto;
+}
+
+#leftHeaderContents > * {
+    font-size: 11px;
+    float:left;
+    margin: 0 2px 0 2px;
+}
+
+#leftMain {
+    position: relative;
+    width: 205px;
+    height: 460px;
+    border: 1px solid black;
+}
+
+/* right */
 #right {
-    width : 530px;
+    position: relative;
+    width : 533px;
     height : 100%;
     border: 1px solid black;
     float: left;
     border-radius: 5px;
 }
 
+#rightHeader  {
+    position: relative;
+    width : 530px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+#rightMain {
+
+}
+
+/**/
 #myThing {
     width: 175px;
     height: 220px;
@@ -52,10 +110,8 @@
     width : 175px;
     height: 195px;
     border: 1px solid black;
-    top: 20px;
-    /*left: 790px;*/
+    position: relative;
 }
-
 #myHome {
     float: left;
     width: 105px;
@@ -70,28 +126,102 @@
     margin: 2px 0 0 0;
 }
 
+/* myThing 내부 */
+
+#gauages {
+    position: absolute;
+    width: 140px;
+    top:10px;
+    left:20px;
+}
+.gauge{
+    float: left;
+    width: 140px;
+    height: 13px;
+}
+
 .gauge > * {
     float: left;
 }
 
 .gaugeName {
-    font-size: 10px;
+    font-size: 11px;
     width: 50px;
 }
 
 progress{
-    width: 100px;
-    float:left;
+    /*
+    -webkit-appearance: none;
+    */
+    width: 50px;
+    height: 8px;
 }
 
+/*
+progress:nth-child(3)::-webkit-progress-value {
+    background-color: orange;
+}
+*/
+
 .rankChanged {
-    float:left;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: bolder;
     margin: 0 4px 0 2px;
+    width: 10px;
+    text-align: center;
 }
 
 .rankDegree {
-    font-size: 10px;
+    font-size: 11px;
+}
+
+#myPicks {
+    position: absolute;
+    width: 70px;
+    top:90px;
+    left:15px;
+}
+
+.myPick > div:nth-child(1) {
+    width: 50px;
+}
+
+.myPick > div{
+    font-size: 11px;
+}
+.myPick > div {
+    float : left;
+}
+
+#myItems{
+    position: absolute;
+    top: 130px;
+    left: 15px;
+    width: 120px;
+}
+
+#myItems > * {
+    font-size: 11px;
     float:left;
+}
+
+#showMyItem{
+    width: 120px;
+    color: deepskyblue;
+}
+
+.boxCount{
+    margin: 0 5px 0 5px;
+    text-align: right;
+    width: 10px;
+}
+
+.box > * {
+    float: left;
+}
+
+#myThing > button {
+    background-color: yellow;
+    border-radius: 3px;
+    border-color: #888888;
 }
