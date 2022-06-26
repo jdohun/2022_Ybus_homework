@@ -1,101 +1,604 @@
 #container {
     width : 1000px;
     height : 580px;
-
-    /*position: relative;*/
     border: 1px solid black;
 }
 
-#book{
+#diary{
+    position: absolute;
     width:785px; /* 오른쪽에 버튼까지 포함한 사이즈*/
     height:500px;
-    border: 1px solid black;
-    position: absolute;
     top: 50px;
     left: 20px;
-    border-radius: 5px;
-}
-
-#realBook{
-    width: 750px; /* 버튼 제외한 사이즈 */
-    height:500px;
+    /*
     border: 1px solid black;
     border-radius: 5px;
+    */
 }
 
-#realBook > div{
+#innerDiary{
+    width: 750px; /* 버튼 제외한 사이즈 */
+    height:500px;
+    /*
+    border: 1px solid black;
+    border-radius: 5px;
+     */
+}
+
+#innerDiary > div{
     float : left;
 }
 
 /* left */
 #left {
-    position: relative;
-    width : 213px;
+    width : 28%;
     height : 100%;
-    border: 1px solid black;
     float: left;
+    padding: 0 5px 5px 5px;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
-#left > div {
-    position: absolute;
-    left: 5px;
+#leftContents {
+    width: 100%;
+    height: 100%;
+    /*
+    border: 1px solid black;
+     */
 }
 
 #leftHeader {
-    position: relative;
-    width : 205px;
-    height: 40px;
+    width : 100%;
+    height: 8.0%;
+    /*
     border: 1px solid black;
-}
-
-#leftContents {
-    position: relative;
-    left: 3px;
+     */
 }
 
 #leftHeaderContents {
-    position: relative;
-    height: 20px;
-    width: 150px;
-    margin: auto;
-    top : 10px;
+    height: 100%;
+    width: 73%;
     margin: auto;
 }
 
 #leftHeaderContents > * {
+    display: inline-block;
     font-size: 11px;
     float:left;
     margin: 0 2px 0 2px;
+    line-height: 40px;
 }
 
 #leftMain {
-    position: relative;
-    width: 205px;
-    height: 460px;
+    width: 100%;
+    height: 92%;
     border: 1px solid black;
+    border-radius: 5px;
+    background-color: #DDDDDD;
+    padding: 5px;
+}
+
+#leftMainContents {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#profileZone {
+    width: 100%;
+    height: 180px;
+    /*
+    border-bottom: 2px dotted black;
+    */
+}
+
+#profile {
+    width: 150px;
+    margin: 0 auto;
+}
+#profile > img {
+    width: 150px;
+    text-align: center;
+    margin: 20px auto 5px auto;
+}
+
+#profile > img {
+    border-radius: 7px;
+}
+
+#emotionOfTodayZone {
+    width: 100%;
+    height: 30px;
+}
+
+#emotionOfToday {
+    width: 150px;
+    height: 100%;
+    margin : 5px auto;
+    border: 2px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+#emotionOfToday > div {
+    font-size: 10px;
+}
+
+#todayIsEmotion {
+    width: 120px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#todayIsEmotion > * {
+    float: left;
+}
+
+#todayIs {
+    color : #0e6fa6;
+    font-weight: bolder;
+    height: 100%;
+    line-height: 26px;
+}
+
+#emotion {
+    width: 38px;
+    height: 100%;
+    line-height: 26px;
+    font-size: 12px;
+    font-weight: bolder;
+    float: left;
+}
+
+#todayIsEmotion > img {
+    height: 100%;
+}
+
+#profileMessageZone {
+    width: 100%;
+    height: 80px;
+}
+
+#profileMessage {
+    width: 150px;
+    height: 100%;
+    margin : 10px auto;
+}
+
+#profileMessage > p {
+    font-size: 12px;
+}
+
+#historyZone {
+    width: 100%;
+    height: 16px;
+}
+
+#historyBox {
+    width: 150px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#historyBox > * {
+    font-size: 12px;
+}
+
+#historyTitle {
+    float: left;
+}
+
+#nextHistory {
+    float: right;
+}
+
+#previousHistory {
+    float: right;
+}
+
+#nickNameZone {
+    width: 100%;
+    margin: 15px auto;
+}
+#nickName {
+    width: 150px;
+    height: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: navy;
+    margin: 0 auto;
+}
+
+#ilchonZone {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#ilchon {
+    width: 150px;
+    margin: 0 auto;
+}
+
+#ilchon > thead > tr > td {
+    font-weight: bold;
+    font-size: 15px;
+    width: 33.3%;
+    text-align: center;
+}
+
+#ilchon > thead > tr > td:nth-child(1) {
+    border: 2px solid #999999;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#ilchon > tbody {
+    width: 100%;
+    border: 2px solid #999999;
+    border-top-right-radius: 4px;
+}
+
+#ilchon > tbody > tr > td {
+    width: 100%;
+    border: 2px solid #999999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#ilchon > tbody > tr > td > select {
+    width: 90%;
+    border : 1px solid black;
+    margin: 5px 7px;
 }
 
 /* right */
 #right {
-    position: relative;
-    width : 533px;
+    width : 70%;
     height : 100%;
-    border: 1px solid black;
     float: left;
+    padding: 0 5px 5px 5px;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
+#rightContents {
+    width: 97%;
+    height: 100%;
+    margin: auto;
+}
+
 #rightHeader  {
-    position: relative;
-    width : 530px;
-    height: 40px;
+    width : 100%;
+    height: 8%;
+    /*
     border: 1px solid black;
+     */
+}
+
+#rightHeaderContents {
+    width: 100%;
+    height: 100%;
+}
+
+#title {
+    float: left;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#myUrl {
+    float: right;
+    font-size: 8px;
+    margin-right: 20px;
+}
+
+#title
+, #myUrl {
+    height: 100%;
+    line-height: 55px;
 }
 
 #rightMain {
-
+    width : 100%;
+    height: 92%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 0;
 }
+
+#rightMainContents {
+    width: 95%;
+    height: 100%;
+    margin: 0 12px;
+    overflow-y: auto;
+    padding-left: 20px;
+    padding-right: 15px;
+    float: left;
+    /*
+    border: 1px solid black;
+     */
+}
+
+#rightTop {
+    width: 100%;
+    height: 110px;
+    /*
+    border: 1px solid black;
+     */
+}
+
+#rightTopLeft {
+    width: 49%;
+    height: 100%;
+    float: left;
+    margin-right: 1%;
+    /*
+    border: 1px solid black;
+     */
+}
+
+#rightTopLeftHeader {
+    width: 100%;
+    height: 20%;
+    border-bottom: 2px solid #DDDDDD;
+}
+
+#rightTopLeftHeaderContents {
+    font-weight: bold;
+    color: #0e6fa6;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+#rightTopLeftMain {
+    width: 100%;
+    height: 80%;
+}
+
+#rightTopLeftMainContents {
+    width: 100%;
+    height: 100%;
+}
+
+#rightTopLeftMainContents > ul li::before {
+    content: "\2022";
+    color: #BBBBBB;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    padding-left: 20px;
+}
+
+#rightTopLeftMainContents > ul > li > a {
+    color: #000069;
+    font-size: 14px;
+}
+
+#rightTopRight {
+    width: 49%;
+    height: 100%;
+    float: left;
+    margin-left: 1%;
+    /*
+    border: 1px solid black;
+    */
+}
+
+#rightTopRightHeader {
+    width: 100%;
+    height: 20%;
+}
+
+#rightTopRightHeaderContents {
+    width: 100%;
+    height: 100%;
+    font-size: 11px;
+    font-weight: bold;
+    color: #0e6fa6;
+    line-height: 25px;
+}
+
+#rightTopRightMain {
+    width: 100%;
+    height: 80%;
+}
+
+#rightTopRightMainContents {
+    width: 100%;
+    height: 100%;
+}
+
+#rightTopRightMainContents > table
+, #rightTopRightMainContents > tbody {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+#rightTopRightMainContents > table > tbody > tr {
+    width: 100%;
+    height: 33.3%;
+}
+
+#rightTopRightMainContents > table > tbody > tr > td {
+    height: 33.3%;
+    font-size: 12px;
+    color: #000069;
+    border: 2px solid #BBBBBB;
+    border-collapse: collapse;
+}
+
+#rightMiddle {
+    width: 100%;
+    height: 295px;
+    /*
+    border: 1px solid yellow;
+     */
+}
+
+#rightMiddleHeader {
+    width: 100%;
+    height: 21px;
+    border-bottom: 2px solid #CCCCCC;
+}
+
+#rightMiddleHeaderContents {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0e6fa6;
+    line-height: 20px;
+}
+
+#miniRoom {
+    float: left;
+}
+
+#roomCondition {
+    float: right;
+}
+
+#rightMiddleMainContents {
+    margin-top: 3px;
+    height: 240px;
+}
+
+#rightMiddleFooter {
+    width: 100%;
+    height: 21px;
+    border-top: 2px solid #CCCCCC;
+    border-bottom: 2px solid #CCCCCC;
+    background-color: #EEEEEE;
+}
+
+#rightMiddleFooterContents {
+    width: 100%;
+    height: 100%;
+    font-size: 11px;
+}
+
+#miniRoomStatus {
+    float: left;
+}
+
+#pictureTogether {
+    float: right;
+}
+
+#miniRoomReply {
+    float: right;
+    margin-left: 7px;
+}
+
+#rightBottomHeader {
+    width: 100%;
+    height: 23px;
+    border-bottom: 2px solid #CCCCCC;
+}
+
+#rightBottomHeaderContents {
+    width: 100%;
+    height: 100%;
+}
+
+#rightBottomHeaderTitle {
+    float: left;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0e6fa6;
+    line-height: 21px;
+}
+
+#rightBottomHeaderSubTitle {
+    float: left;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+.guestBook {
+    width: 100%;
+    height: 21px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #000069;
+}
+
+.guestBook > a {
+}
+
+.guest {
+}
+
+.guestNickName {
+}
+.guestRealName {
+    color: #0e6fa6;
+}
+
+/* bookmark */
+#bookmarkZone {
+    float: left;
+    height: 100%;
+    width: 0px;
+    /*
+    border: 1px solid red;
+    */
+}
+
+#bookmarkZoneSpacer {
+    /*
+    border: 1px solid navy;
+    */
+}
+
+#bookmarkBundleZone {
+    height: 85%;
+    width: 60px;
+    /*
+    border: 1px solid green;
+     */
+}
+
+#bookmarkBundle {
+    height: 100%;
+    width: 100%;
+    /*
+    border: 1px solid hotpink;
+    */
+}
+
+.bookmark {
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 3px;
+    color: white;
+    background-color: #0e6fa6;
+}
+
+#selectedBookmark {
+    color: black;
+    background-color: white;
+    border-left: 2px solid white;
+}
+
+
 
 /**/
 #myThing {
@@ -127,7 +630,6 @@
 }
 
 /* myThing 내부 */
-
 #gauages {
     position: absolute;
     width: 140px;
@@ -207,7 +709,7 @@ progress:nth-child(3)::-webkit-progress-value {
 
 #showMyItem{
     width: 120px;
-    color: deepskyblue;
+    color: #0e6fa6;
 }
 
 .boxCount{
@@ -220,7 +722,7 @@ progress:nth-child(3)::-webkit-progress-value {
     float: left;
 }
 
-#myThing > button {
+#myButtons > button {
     background-color: yellow;
     border-radius: 3px;
     border-color: #888888;

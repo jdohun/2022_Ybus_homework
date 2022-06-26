@@ -7,102 +7,331 @@
     <title>싸이월드 따라하기</title>
 </head>
 <body>
-    <div id="container">
-        <div id="book">
-            <div id="realBook">
-                <div id="left">
-                    <div id="leftContents">
-                        <div id="leftHeader">
-                            <div id="leftHeaderContents">
-                                <div id="today">TODAY</div>
-                                <div id="todayCount" class="visitCount">1234</div>
-                                <div id="">|</div>
-                                <div id="total">TOTAL</div>
-                                <div id="totalCount" class="visitCount">12345</div>
-                            </div>
+<div id="container">
+    <div id="diary">
+        <div id="innerDiary">
+            <div id="left">
+                <div id="leftContents">
+                    <div id="leftHeader">
+                        <div id="leftHeaderContents">
+                            <div id="today">TODAY</div>
+                            <div id="todayCount" class="visitCount">1234</div>
+                            <div id="">|</div>
+                            <div id="total">TOTAL</div>
+                            <div id="totalCount" class="visitCount">12345</div>
                         </div>
-                        <div id="leftMain">
-                            <div id="profile"></div>
-                            <div>
-                                <div>TODAY IS...</div>
-                                <div>♩</div>
-                                <div>즐거움</div>
+                    </div>
+                    <div id="leftMain">
+                        <div id="leftMainContents">
+                            <div id="profileZone">
+                                <div id="profile">
+                                    <img src="./img/profile.jpg" alt="이미지">
+                                </div>
+                            </div>
+                            <div id="emotionOfTodayZone">
+                                <div id="emotionOfToday">
+                                    <div id="todayIsEmotion">
+                                        <div id="todayIs">TODAY IS...</div>
+                                        <img src="img/8분음표.png">
+                                        <div id="emotion">즐거움</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="profileMessageZone">
+                                <div id="profileMessage">
+                                    <p>사이좋은 사람들</p>
+                                    <p>싸이월드 ^--^</p>
+                                </div>
+                            </div>
+                            <div id="historyZone">
+                                <div id="historyBox">
+                                    <div id="historyTitle">▶ History</div>
+                                    <div id="previousHistory"><a>▲</a></div>
+                                    <div id="nextHistory"><a>▼</a></div>
+                                </div>
+                            </div>
+                            <div id="nickNameZone">
+                                <div id="nickName">
+                                    싸이월드
+                                </div>
+                            </div>
+                            <div id="ilchonZone">
+                                <table id="ilchon">
+                                    <thead>
+                                    <tr>
+                                        <td>일촌</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td colspan="3">
+                                            <select>
+                                                <option value>★ 일촌 파도타기 </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="right">
-                    <div id="rightContents">
-                        <div id="rightHeader">
+            </div>
+            <div id="right">
+                <div id="rightContents">
+                    <div id="rightHeader">
+                        <div id="rightHeaderContents">
                             <div id="title">사이좋은 사람들</div>
                             <div id="myUrl">http://www.cyworld.com/happy_cyworld</div>
                         </div>
-                        <div id="rightMain">
-
+                    </div>
+                    <div id="rightMain">
+                        <div id="rightMainContents">
+                            <div id="rightTop">
+                                <div id="rightTopLeft">
+                                    <div id="rightTopLeftHeader">
+                                        <div id="rightTopLeftHeaderContents">
+                                            <a>Update news</a>
+                                        </div>
+                                    </div>
+                                    <div id="rightTopLeftMain">
+                                        <div id="rightTopLeftMainContents">
+                                            <ul>
+                                                <li><a>하나 더! 질문!</a></li>
+                                                <li><a>피부과에서 준 처방전</a></li>
+                                                <li><a>놀러왔어요!</a></li>
+                                                <li><a>봄맞이 점심출사1 -_-</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="rightTopRight">
+                                    <div id="rightTopRightHeader">
+                                        <div id="rightTopRightHeaderContents">
+                                            <a>
+                                                <img src="img/CD검정심플.png" alt="CD" style="height: 45%;">
+                                                BGM ▶
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="rightTopRightMain">
+                                        <div id="rightTopRightMainContents">
+                                            <table>
+                                                <tbody>
+                                                <tr>
+                                                    <td><a>다이어리 0/29</a></td>
+                                                    <td><a>쥬크박스 1/12</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a>사진첩 1/41</a></td>
+                                                    <td><a>갤러리 0/70</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a>게시판 0/99</a></td>
+                                                    <td><a>즐겨찾기 0/0</a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="rightMiddle">
+                                <div id="rightMiddleHeader">
+                                    <div id="rightMiddleHeaderContents">
+                                        <div id="miniRoom">
+                                            <a>Mini Room</a>
+                                        </div>
+                                        <div id="roomCondition">
+                                            외출준비끝
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="rightMiddleMain">
+                                    <div id="rightMiddleMainContents">
+                                        <img src="img/miniroom.gif" style="width: 100%; border: 2px solid #DDDDDD;">
+                                    </div>
+                                </div>
+                                <div id="rightMiddleFooter">
+                                    <div id="rightMiddleFooterContents">
+                                        <div id="miniRoomStatus"><a>[▶ 미니룸수 0]</a></div>
+                                        <div id="miniRoomReply"><a>▶미니룸 답글달기[9]</a></div>
+                                        <div id="pictureTogether"><a>▶함께사진찍기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="rightBottom">
+                                <div id="rightBottomHeader">
+                                    <div id="rightBottomHeaderContents">
+                                        <div id="rightBottomHeaderTitle">What freinds says</div>
+                                        <div id="rightBottomHeaderSubTitle">한마디로 표현해봐~</div>
+                                    </div>
+                                </div>
+                                <div id="rightBottomMain">
+                                    <div id="rightBottomMainContents">
+                                        <div class="guestBook">
+                                            <p>
+                                                <a>
+                                                    요즘 너무나 니가 낯설게 느껴져
+                                                    <span class="guest">
+                                                            (
+                                                            <span class="guestNickName">모짜렐라</span>
+                                                            <span class="guestRealName">진원</span>
+                                                            )
+                                                        </span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="guestBook">
+                                            <p>
+                                                <a>
+                                                    어제는 전화도 한번 없었지
+                                                    <span class="guest">
+                                                            (
+                                                            <span class="guestNickName">발라더george</span>
+                                                            <span class="guestRealName">이동민</span>
+                                                            )
+                                                        </span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="guestBook">
+                                            <p>
+                                                <a>
+                                                    어디니 밥은 먹었냐고 묻는 상냥한 니 말 기다렸는데
+                                                    <span class="guest">
+                                                            (
+                                                            <span class="guestNickName">cool한42</span>
+                                                            <span class="guestRealName">박문치</span>
+                                                            )
+                                                    </span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bookmarkZone">
+                            <div id="bookmarkZoneSpacer"></div>
+                            <div id="bookmarkBundleZone">
+                                <div id="bookmarkBundle">
+                                    <a>
+                                        <div class="bookmark" id="selectedBookmark">
+                                            홈
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div class="bookmark">
+                                            프로필
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div class="bookmark">
+                                            다이어리
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div class="bookmark">
+                                            쥬크박스
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div class="bookmark">
+                                            사진첩
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div class="bookmark">
+                                            갤러리
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div class="bookmark">
+                                            게시판
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div class="bookmark">
+                                            방명록
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div class="bookmark">
+                                            즐겨찾기
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="myThing">
-            <div id="scoreBoard">
-                <div id="gauages">
-                    <div class="gauge">
-                        <div class="gaugeName">에로틱</div>
-                        <progress  id="erotic" value="96" max="130"></progress>
-                        <div class="rankChanged">-</div>
-                        <div class="rankDegree">96</div>
-                    </div>
-                    <div class="gauge">
-                        <div class="gaugeName">페이머스</div>
-                        <progress value="186" max="300"></progress>
-                        <div class="rankChanged">-</div>
-                        <div class="rankDegree">186</div>
-                    </div>
-                    <div class="gauge">
-                        <div class="gaugeName">프랜들리</div>
-                        <progress value="341" max="500"></progress>
-                        <div class="rankChanged" style="color:red;">↑</div>
-                        <div class="rankDegree">341</div>
-                    </div>
-                    <div class="gauge">
-                        <div class="gaugeName">카르마</div>
-                        <progress value="67" max="100"></progress>
-                        <div class="rankChanged">-</div>
-                        <div class="rankDegree">67</div>
-                    </div>
-                    <div class="gauge">
-                        <div class="gaugeName">카인드</div>
-                        <progress value="496" max="600"></progress>
-                        <div class="rankChanged" style="color:red;">↑</div>
-                        <div class="rankDegree">496</div>
-                    </div>
+    </div>
+    <div id="myThing">
+        <div id="scoreBoard">
+            <div id="gauages">
+                <div class="gauge">
+                    <div class="gaugeName">에로틱</div>
+                    <progress  id="erotic" value="96" max="130"></progress>
+                    <div class="rankChanged">-</div>
+                    <div class="rankDegree">96</div>
                 </div>
-                <div id="myPicks">
-                    <div class="myPick">
-                        <div>스크랩</div>
-                        <div>5</div>
-                    </div>
-                    <div class="myPick">
-                        <div>즐겨찾기</div>
-                        <div>5</div>
-                    </div>
+                <div class="gauge">
+                    <div class="gaugeName">페이머스</div>
+                    <progress value="186" max="300"></progress>
+                    <div class="rankChanged">-</div>
+                    <div class="rankDegree">186</div>
                 </div>
-                <div id="myItems">
-                    <a id="showMyItem">사용중인 아이템보기▶</a>
-                    <div class="box">
-                        <div id="presentBox">선물함</div>
-                        <div class="boxCount">80</div>
-                    </div>
-                    <div class="box">
-                        <div id="hopeBox">소망상자</div>
-                        <div class="boxCount">1</div>
-                    </div>
+                <div class="gauge">
+                    <div class="gaugeName">프랜들리</div>
+                    <progress value="341" max="500"></progress>
+                    <div class="rankChanged" style="color:red;">↑</div>
+                    <div class="rankDegree">341</div>
+                </div>
+                <div class="gauge">
+                    <div class="gaugeName">카르마</div>
+                    <progress value="67" max="100"></progress>
+                    <div class="rankChanged">-</div>
+                    <div class="rankDegree">67</div>
+                </div>
+                <div class="gauge">
+                    <div class="gaugeName">카인드</div>
+                    <progress value="496" max="600"></progress>
+                    <div class="rankChanged" style="color:red;">↑</div>
+                    <div class="rankDegree">496</div>
                 </div>
             </div>
+            <div id="myPicks">
+                <div class="myPick">
+                    <div>스크랩</div>
+                    <div>5</div>
+                </div>
+                <div class="myPick">
+                    <div>즐겨찾기</div>
+                    <div>5</div>
+                </div>
+            </div>
+            <div id="myItems">
+                <a id="showMyItem">사용중인 아이템보기▶</a>
+                <div class="box">
+                    <div id="presentBox">선물함</div>
+                    <div class="boxCount">80</div>
+                </div>
+                <div class="box">
+                    <div id="hopeBox">소망상자</div>
+                    <div class="boxCount">1</div>
+                </div>
+            </div>
+        </div>
+        <div id="myButtons">
             <button id="myHome">내 미니홈피 가기</button>
             <button id="logOut">로그아웃</button>
         </div>
     </div>
+</div>
 </body>
 </html>
