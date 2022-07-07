@@ -16,6 +16,7 @@ body{
     border: 1px solid black;
     margin: 0 auto;
 }
+
 /*
 #nav {
 width: 100%;
@@ -108,8 +109,4 @@ border-bottom: 1px solid black;
     font-size: 15px;
     right: 20px;
     bottom: 10px;
-}
-
-#bullet1 {
-    left: -4px;
 }
