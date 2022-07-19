@@ -5,6 +5,7 @@ const Over = 3;
 
 let gameCondition = ready; // 현재 게임 상태 시작 준비중
 
+// player 초기화
 let playerSpeed = 1;
 let playerY = 232;
 let playerX = 282;
@@ -27,6 +28,13 @@ let possilbe_walls = []; // 동:0, 서:1, 남:2, 북:3
 let bulletNumber = 0;
 let choiced_walls = null;
 
+let startSign = $(`<span id="startSign" class="sign">PUSH ENTER START!</span>`);
+let restartSign = $(`<span id="restartSign" class="sign">
+                GAME OVER<br>
+                ENTER TO RESTART
+        </span>`);
+let bulletCount = document.querySelector("#bulletCount");
+
 // main ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 
 // 시작 전 준비
@@ -41,9 +49,11 @@ choiced_walls = Math.floor((Math.random() * 10) % possilbe_walls.length);
 creation_walls[possilbe_walls[choiced_walls]] += 1;
 possilbe_walls = [];
 
-createBullet();
+$("#map").append(startSign);
+bulletCount.innerText = total_Bullets;
 drawPlayer();
-gameReady();
+/*createBullet();*/
+//gameReady();
 
 // 시작
 
@@ -107,7 +117,6 @@ function createBullet() {
 
 // 게임 준비
 function gameReady(){
-    $("#map").append(`<span id="startSign" class="sign">PUSH ENTER START!</span>`);
 }
 
 // 게임 시작
@@ -133,32 +142,37 @@ function erasePlayer() {
 window.addEventListener("keypress", e => {
     const key = document.getElementById(e.key);
     if (e.key === "w") {
-        //console.log($("#player").valueOf());
-        //$("#player").attributes;
-
         playerY += playerSpeed;
-        $("#player").remove();
-        $("#map").append(`<span id="player" style="bottom : ${playerY}px; left: ${playerX}px;"></span>`);
+        $("#player").css("bottom", playerY);
+        console.log("w")
     }
 
     if (e.key === "a") {
         playerX -= playerSpeed;
-        $("#player").remove();
-        $("#map").append(`<span id="player" style="bottom : ${playerY}px; left: ${playerX}px;"></span>`);
+        $("#player").css("left", playerX);
+        console.log("a")
     }
 
     if (e.key === "s") {
-        console.log(e.key);
+        playerY -= playerSpeed;
+        $("#player").css("bottom", playerY);
+        console.log("s")
     }
 
     if (e.key === "d") {
-        console.log(e.key);
+        playerX += playerSpeed;
+        $("#player").css("left", playerX);
+        console.log("d")
     }
 
-    if (e.key === "w" && e.key === "a") {
+    if (e.key === "w") {
         playerY += playerSpeed;
-        playerX -= playerSpeed;
-        $("#player").remove();
-        $("#map").append(`<span id="player" style="bottom : ${playerY}px; left: ${playerX}px;"></span>`);
+        console.log("w>a")
+        if (e.key === "a") {
+            playerX -= playerSpeed;
+
+            $("#player").css("left", playerX, "bottom", playerY);
+            console.log("wa")
+        }
     }
 });
